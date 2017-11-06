@@ -4,13 +4,15 @@ namespace Ekino\WordpressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Ekino\WordpressBundle\Model\WordpressEntityInterface;
+
 /**
  * Usermeta
  *
- * @ORM\Table(name="wp_usermeta", indexes={@ORM\Index(name="user_id", columns={"user_id"}), @ORM\Index(name="meta_key", columns={"meta_key"})})
+ * @ORM\Table(name="usermeta", indexes={@ORM\Index(name="user_id", columns={"user_id"}), @ORM\Index(name="meta_key", columns={"meta_key"})})
  * @ORM\Entity
  */
-class Usermeta
+class Usermeta implements WordpressEntityInterface
 {
     /**
      * @var integer

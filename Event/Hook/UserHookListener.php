@@ -80,6 +80,10 @@ class UserHookListener
     {
         $wpUser = $event->getParameter('user');
 
+        dump($wpUser);
+
+        die();
+
         $user = $this->userManager->find($wpUser->data->ID);
         $user->setWordpressRoles($wpUser->roles);
 

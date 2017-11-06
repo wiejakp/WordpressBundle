@@ -56,7 +56,7 @@
             <argument>%ekino.wordpress.entity.user.class%</argument>
         </service>
 
-        <service id="ekino.wordpress.manager.user_meta_default" class="Ekino\WordpressBundle\Manager\UserMetaManager" public="false">
+        <service id="ekino.wordpress.manager.user_meta_default" class="Ekino\WordpressBundle\Manager\UsermetaManager" public="false">
             <argument type="service" id="doctrine.orm.entity_manager" />
             <argument>%ekino.wordpress.entity.user_meta.class%</argument>
         </service>

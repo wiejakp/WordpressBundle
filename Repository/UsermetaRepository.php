@@ -13,12 +13,12 @@ namespace Ekino\WordpressBundle\Repository;
 use Doctrine\ORM\EntityRepository;
 
 /**
- * Class UserMetaRepository.
+ * Class UsermetaRepository.
  *
- * This is the repository of the UserMeta entity
+ * This is the repository of the Usermeta entity
  *
  * @author Vincent Composieux <composieux@ekino.com>
  */
-class UserMetaRepository extends EntityRepository
+class UsermetaRepository extends EntityRepository
 {
 }

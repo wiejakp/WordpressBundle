@@ -12,7 +12,7 @@ namespace Ekino\WordpressBundle\Tests\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Ekino\WordpressBundle\Entity\User;
-use Ekino\WordpressBundle\Entity\UserMeta;
+use Ekino\WordpressBundle\Entity\Usermeta;
 
 /**
  * Class UserTest.
@@ -36,7 +36,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
         $entity->setLogin('login');
 
         $collection = new ArrayCollection();
-        $meta1 = new UserMeta();
+        $meta1 = new Usermeta();
         $meta1->setKey('meta-key');
         $meta1->setValue('meta-value');
         $meta1->setUser($entity);

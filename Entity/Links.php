@@ -4,13 +4,15 @@ namespace Ekino\WordpressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Ekino\WordpressBundle\Model\WordpressEntityInterface;
+
 /**
  * Links
  *
- * @ORM\Table(name="wp_links", indexes={@ORM\Index(name="link_visible", columns={"link_visible"})})
+ * @ORM\Table(name="links", indexes={@ORM\Index(name="link_visible", columns={"link_visible"})})
  * @ORM\Entity
  */
-class Links
+class Links implements WordpressEntityInterface
 {
     /**
      * @var integer

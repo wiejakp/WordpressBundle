@@ -4,13 +4,15 @@ namespace Ekino\WordpressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Ekino\WordpressBundle\Model\WordpressEntityInterface;
+
 /**
  * TermTaxonomy
  *
- * @ORM\Table(name="wp_term_taxonomy", uniqueConstraints={@ORM\UniqueConstraint(name="term_id_taxonomy", columns={"term_id", "taxonomy"})}, indexes={@ORM\Index(name="taxonomy", columns={"taxonomy"})})
+ * @ORM\Table(name="term_taxonomy", uniqueConstraints={@ORM\UniqueConstraint(name="term_id_taxonomy", columns={"term_id", "taxonomy"})}, indexes={@ORM\Index(name="taxonomy", columns={"taxonomy"})})
  * @ORM\Entity
  */
-class TermTaxonomy
+class TermTaxonomy implements WordpressEntityInterface
 {
     /**
      * @var integer

@@ -4,13 +4,15 @@ namespace Ekino\WordpressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Ekino\WordpressBundle\Model\User as UserModel;
+
 /**
- * Users
+ * User
  *
- * @ORM\Table(name="wp_users", indexes={@ORM\Index(name="user_login_key", columns={"user_login"}), @ORM\Index(name="user_nicename", columns={"user_nicename"}), @ORM\Index(name="user_email", columns={"user_email"})})
+ * @ORM\Table(name="users", indexes={@ORM\Index(name="user_login_key", columns={"user_login"}), @ORM\Index(name="user_nicename", columns={"user_nicename"}), @ORM\Index(name="user_email", columns={"user_email"})})
  * @ORM\Entity
  */
-class Users
+class User extends UserModel
 {
     /**
      * @var integer
@@ -26,7 +28,7 @@ class Users
      *
      * @ORM\Column(name="user_login", type="string", length=60, nullable=false)
      */
-    private $userLogin = '';
+    protected $userLogin = '';
 
     /**
      * @var string

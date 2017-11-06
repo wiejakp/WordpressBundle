@@ -4,13 +4,14 @@ namespace Ekino\WordpressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Ekino\WordpressBundle\Model\WordpressEntityInterface;
 /**
  * Termmeta
  *
- * @ORM\Table(name="wp_termmeta", indexes={@ORM\Index(name="term_id", columns={"term_id"}), @ORM\Index(name="meta_key", columns={"meta_key"})})
+ * @ORM\Table(name="termmeta", indexes={@ORM\Index(name="term_id", columns={"term_id"}), @ORM\Index(name="meta_key", columns={"meta_key"})})
  * @ORM\Entity
  */
-class Termmeta
+class Termmeta implements WordpressEntityInterface
 {
     /**
      * @var integer

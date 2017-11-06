@@ -4,13 +4,15 @@ namespace Ekino\WordpressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Ekino\WordpressBundle\Model\WordpressEntityInterface;
+
 /**
  * Terms
  *
- * @ORM\Table(name="wp_terms", indexes={@ORM\Index(name="slug", columns={"slug"}), @ORM\Index(name="name", columns={"name"})})
+ * @ORM\Table(name="terms", indexes={@ORM\Index(name="slug", columns={"slug"}), @ORM\Index(name="name", columns={"name"})})
  * @ORM\Entity
  */
-class Terms
+class Terms implements WordpressEntityInterface
 {
     /**
      * @var integer

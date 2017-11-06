@@ -4,13 +4,15 @@ namespace Ekino\WordpressBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Ekino\WordpressBundle\Model\WordpressEntityInterface;
+
 /**
  * Options
  *
- * @ORM\Table(name="wp_options", uniqueConstraints={@ORM\UniqueConstraint(name="option_name", columns={"option_name"})})
+ * @ORM\Table(name="options", uniqueConstraints={@ORM\UniqueConstraint(name="option_name", columns={"option_name"})})
  * @ORM\Entity
  */
-class Option
+class Option implements WordpressEntityInterface
 {
     /**
      * @var integer

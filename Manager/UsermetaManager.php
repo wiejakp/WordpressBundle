@@ -11,12 +11,12 @@
 namespace Ekino\WordpressBundle\Manager;
 
 /**
- * Class UserMetaManager.
+ * Class UsermetaManager.
  *
- * This is the UserMeta entity manager
+ * This is the Usermeta entity manager
  *
  * @author Vincent Composieux <composieux@ekino.com>
  */
-class UserMetaManager extends BaseManager
+class UsermetaManager extends BaseManager
 {
 }

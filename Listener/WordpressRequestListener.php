@@ -76,6 +76,8 @@ class WordpressRequestListener
 
         $session = $request->getSession();
 
+        dump($session);
+
         if ($session->has('token')) {
             $token = $session->get('token');
             $this->tokenStorage->setToken($token);

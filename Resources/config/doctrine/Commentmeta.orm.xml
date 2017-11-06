@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity name="Ekino\WordpressBundle\Entity\Commentmeta" table="wp_commentmeta">
+  <entity name="Ekino\WordpressBundle\Entity\Commentmeta" table="commentmeta">
     <indexes>
       <index name="comment_id" columns="comment_id"/>
       <index name="meta_key" columns="meta_key"/>

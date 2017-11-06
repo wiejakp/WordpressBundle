@@ -38,10 +38,12 @@ class EkinoWordpressBundle extends Bundle
      */
     public function addRegisterMappingPass(ContainerBuilder $containerBuilder)
     {
+        /*
         $mappings = [
             realpath(__DIR__.'/Resources/config/doctrine-model') => 'Ekino\WordpressBundle\Model',
         ];
 
         $containerBuilder->addCompilerPass(RegisterMappingsPass::createOrmMappingDriver($mappings));
+        */
     }
 }

@@ -11,23 +11,23 @@
 namespace Ekino\WordpressBundle\Tests\Entity;
 
 use Ekino\WordpressBundle\Entity\User;
-use Ekino\WordpressBundle\Entity\UserMeta;
+use Ekino\WordpressBundle\Entity\Usermeta;
 
 /**
- * Class UserMetaTest.
+ * Class UsermetaTest.
  *
  * This is the Wordpress user meta entity test
  *
  * @author Vincent Composieux <composieux@ekino.com>
  */
-class UserMetaTest extends \PHPUnit_Framework_TestCase
+class UsermetaTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Test entity getters & setters.
      */
     public function testGettersSetters()
     {
-        $entity = new UserMeta();
+        $entity = new Usermeta();
 
         $user = new User();
         $user->setDisplayName('display name');

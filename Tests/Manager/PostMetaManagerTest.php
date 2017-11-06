@@ -48,7 +48,7 @@ class PostMetaManagerTest extends \PHPUnit_Framework_TestCase
             ->method('getRepository')
             ->will($this->returnValue($this->repository));
 
-        $this->manager = new PostMetaManager($this->entityManager, 'Ekino\WordpressBundle\Entity\PostMeta');
+        $this->manager = new PostMetaManager($this->entityManager, 'Ekino\WordpressBundle\Entity\Postmeta');
     }
 
     public function testGetPostMetaCollection()

@@ -10,7 +10,7 @@
 
 namespace Ekino\WordpressBundle\Tests\Entity;
 
-use Ekino\WordpressBundle\Entity\Comment;
+use Ekino\WordpressBundle\Entity\Comments;
 use Ekino\WordpressBundle\Entity\CommentMeta;
 
 /**
@@ -29,7 +29,7 @@ class CommentMetaTest extends \PHPUnit_Framework_TestCase
     {
         $entity = new CommentMeta();
 
-        $comment = new Comment();
+        $comment = new Comments();
         $comment->setContent('comment message');
         $entity->setComment($comment);
 

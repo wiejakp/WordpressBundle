@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity name="Ekino\WordpressBundle\Entity\Termmeta" table="termmeta">
+  <entity name="Ekino\WordpressBundle\Entity\Termmeta" table="wp_termmeta">
     <indexes>
       <index name="term_id" columns="term_id"/>
       <index name="meta_key" columns="meta_key"/>

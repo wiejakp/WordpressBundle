@@ -7,10 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Options
  *
- * @ORM\Table(name="options", uniqueConstraints={@ORM\UniqueConstraint(name="option_name", columns={"option_name"})})
+ * @ORM\Table(name="wp_options", uniqueConstraints={@ORM\UniqueConstraint(name="option_name", columns={"option_name"})})
  * @ORM\Entity
  */
-class Options
+class Option
 {
     /**
      * @var integer

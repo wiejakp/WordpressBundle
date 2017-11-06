@@ -11,7 +11,7 @@
 namespace Ekino\WordpressBundle\Tests\Entity;
 
 use Ekino\WordpressBundle\Entity\Post;
-use Ekino\WordpressBundle\Entity\PostMeta;
+use Ekino\WordpressBundle\Entity\Postmeta;
 
 /**
  * Class PostMetaTest.

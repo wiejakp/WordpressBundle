@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Links
  *
- * @ORM\Table(name="links", indexes={@ORM\Index(name="link_visible", columns={"link_visible"})})
+ * @ORM\Table(name="wp_links", indexes={@ORM\Index(name="link_visible", columns={"link_visible"})})
  * @ORM\Entity
  */
 class Links

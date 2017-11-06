@@ -11,7 +11,7 @@
 namespace Ekino\WordpressBundle\Manager;
 
 use Ekino\WordpressBundle\Entity\Post;
-use Ekino\WordpressBundle\Entity\PostMeta;
+use Ekino\WordpressBundle\Entity\Postmeta;
 use Ekino\WordpressBundle\Repository\PostMetaRepository;
 
 /**
@@ -33,7 +33,7 @@ class PostMetaManager extends BaseManager
      * @param string $metaName       A meta name
      * @param bool   $fetchOneResult Use fetchOneOrNullResult() method instead of getResult()?
      *
-     * @return array|\Ekino\WordpressBundle\Entity\PostMeta
+     * @return array|\Ekino\WordpressBundle\Entity\Postmeta
      */
     public function getPostMeta($postId, $metaName, $fetchOneResult = false)
     {

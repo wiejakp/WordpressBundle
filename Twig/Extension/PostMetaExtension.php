@@ -58,7 +58,7 @@ class PostMetaExtension extends \Twig_Extension
      * @param string $metaName       A meta name
      * @param bool   $fetchOneResult Use fetchOneOrNullResult() method instead of getResult()?
      *
-     * @return array|\Ekino\WordpressBundle\Entity\PostMeta
+     * @return array|\Ekino\WordpressBundle\Entity\Postmeta
      */
     public function getPostMeta($postId, $metaName, $fetchOneResult = false)
     {

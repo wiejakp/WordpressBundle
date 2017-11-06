@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity name="Ekino\WordpressBundle\Entity\Comments" table="comments">
+  <entity name="Ekino\WordpressBundle\Entity\Comments" table="wp_comments">
     <indexes>
       <index name="comment_post_ID" columns="comment_post_ID"/>
       <index name="comment_approved_date_gmt" columns="comment_approved,comment_date_gmt"/>

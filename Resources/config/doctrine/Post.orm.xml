@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity name="Ekino\WordpressBundle\Entity\Posts" table="posts">
+  <entity name="Ekino\WordpressBundle\Entity\Post" table="wp_posts">
     <indexes>
       <index name="post_name" columns="post_name"/>
       <index name="type_status_date" columns="post_type,post_status,post_date,ID"/>

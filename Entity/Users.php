@@ -84,6 +84,164 @@ class Users
      */
     private $displayName = '';
 
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserLogin()
+    {
+        return $this->userLogin;
+    }
+
+    /**
+     * @param string $userLogin
+     */
+    public function setUserLogin($userLogin)
+    {
+        $this->userLogin = $userLogin;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserPass()
+    {
+        return $this->userPass;
+    }
+
+    /**
+     * @param string $userPass
+     */
+    public function setUserPass($userPass)
+    {
+        $this->userPass = $userPass;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserNicename()
+    {
+        return $this->userNicename;
+    }
+
+    /**
+     * @param string $userNicename
+     */
+    public function setUserNicename($userNicename)
+    {
+        $this->userNicename = $userNicename;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserEmail()
+    {
+        return $this->userEmail;
+    }
+
+    /**
+     * @param string $userEmail
+     */
+    public function setUserEmail($userEmail)
+    {
+        $this->userEmail = $userEmail;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserUrl()
+    {
+        return $this->userUrl;
+    }
+
+    /**
+     * @param string $userUrl
+     */
+    public function setUserUrl($userUrl)
+    {
+        $this->userUrl = $userUrl;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getUserRegistered()
+    {
+        return $this->userRegistered;
+    }
+
+    /**
+     * @param \DateTime $userRegistered
+     */
+    public function setUserRegistered($userRegistered)
+    {
+        $this->userRegistered = $userRegistered;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserActivationKey()
+    {
+        return $this->userActivationKey;
+    }
+
+    /**
+     * @param string $userActivationKey
+     */
+    public function setUserActivationKey($userActivationKey)
+    {
+        $this->userActivationKey = $userActivationKey;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUserStatus()
+    {
+        return $this->userStatus;
+    }
+
+    /**
+     * @param int $userStatus
+     */
+    public function setUserStatus($userStatus)
+    {
+        $this->userStatus = $userStatus;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDisplayName()
+    {
+        return $this->displayName;
+    }
+
+    /**
+     * @param string $displayName
+     */
+    public function setDisplayName($displayName)
+    {
+        $this->displayName = $displayName;
+    }
 }
 

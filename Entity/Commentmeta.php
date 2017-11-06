@@ -42,6 +42,76 @@ class Commentmeta
      */
     private $metaValue;
 
+    /**
+     * @return int
+     */
+    public function getMetaId()
+    {
+        return $this->metaId;
+    }
 
+    /**
+     * @param int $metaId
+     * @return Commentmeta
+     */
+    public function setMetaId($metaId)
+    {
+        $this->metaId = $metaId;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCommentId()
+    {
+        return $this->commentId;
+    }
+
+    /**
+     * @param int $commentId
+     * @return Commentmeta
+     */
+    public function setCommentId($commentId)
+    {
+        $this->commentId = $commentId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaKey()
+    {
+        return $this->metaKey;
+    }
+
+    /**
+     * @param string $metaKey
+     * @return Commentmeta
+     */
+    public function setMetaKey($metaKey)
+    {
+        $this->metaKey = $metaKey;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaValue()
+    {
+        return $this->metaValue;
+    }
+
+    /**
+     * @param string $metaValue
+     * @return Commentmeta
+     */
+    public function setMetaValue($metaValue)
+    {
+        $this->metaValue = $metaValue;
+        return $this;
+    }
 }
 

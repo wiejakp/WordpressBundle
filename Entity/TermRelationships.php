@@ -37,6 +37,52 @@ class TermRelationships
      */
     private $termOrder = '0';
 
+    /**
+     * @return int
+     */
+    public function getObjectId()
+    {
+        return $this->objectId;
+    }
 
+    /**
+     * @param int $objectId
+     */
+    public function setObjectId($objectId)
+    {
+        $this->objectId = $objectId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTermTaxonomyId()
+    {
+        return $this->termTaxonomyId;
+    }
+
+    /**
+     * @param int $termTaxonomyId
+     */
+    public function setTermTaxonomyId($termTaxonomyId)
+    {
+        $this->termTaxonomyId = $termTaxonomyId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTermOrder()
+    {
+        return $this->termOrder;
+    }
+
+    /**
+     * @param int $termOrder
+     */
+    public function setTermOrder($termOrder)
+    {
+        $this->termOrder = $termOrder;
+    }
 }
 

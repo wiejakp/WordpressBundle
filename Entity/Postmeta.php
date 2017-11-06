@@ -42,6 +42,22 @@ class Postmeta
      */
     private $metaValue;
 
+    /**
+     * @return int
+     */
+    public function getMetaId()
+    {
+        return $this->metaId;
+    }
 
+    /**
+     * @param int $metaId
+     * @return Postmeta
+     */
+    public function setMetaId($metaId)
+    {
+        $this->metaId = $metaId;
+        return $this;
+    }
 }
 

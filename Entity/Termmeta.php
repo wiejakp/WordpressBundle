@@ -42,6 +42,68 @@ class Termmeta
      */
     private $metaValue;
 
+    /**
+     * @return int
+     */
+    public function getMetaId()
+    {
+        return $this->metaId;
+    }
 
+    /**
+     * @param int $metaId
+     */
+    public function setMetaId($metaId)
+    {
+        $this->metaId = $metaId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTermId()
+    {
+        return $this->termId;
+    }
+
+    /**
+     * @param int $termId
+     */
+    public function setTermId($termId)
+    {
+        $this->termId = $termId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaKey()
+    {
+        return $this->metaKey;
+    }
+
+    /**
+     * @param string $metaKey
+     */
+    public function setMetaKey($metaKey)
+    {
+        $this->metaKey = $metaKey;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaValue()
+    {
+        return $this->metaValue;
+    }
+
+    /**
+     * @param string $metaValue
+     */
+    public function setMetaValue($metaValue)
+    {
+        $this->metaValue = $metaValue;
+    }
 }
 

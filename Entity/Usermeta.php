@@ -42,6 +42,68 @@ class Usermeta
      */
     private $metaValue;
 
+    /**
+     * @return int
+     */
+    public function getUmetaId()
+    {
+        return $this->umetaId;
+    }
 
+    /**
+     * @param int $umetaId
+     */
+    public function setUmetaId($umetaId)
+    {
+        $this->umetaId = $umetaId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    /**
+     * @param int $userId
+     */
+    public function setUserId($userId)
+    {
+        $this->userId = $userId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaKey()
+    {
+        return $this->metaKey;
+    }
+
+    /**
+     * @param string $metaKey
+     */
+    public function setMetaKey($metaKey)
+    {
+        $this->metaKey = $metaKey;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaValue()
+    {
+        return $this->metaValue;
+    }
+
+    /**
+     * @param string $metaValue
+     */
+    public function setMetaValue($metaValue)
+    {
+        $this->metaValue = $metaValue;
+    }
 }
 

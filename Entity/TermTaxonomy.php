@@ -56,6 +56,100 @@ class TermTaxonomy
      */
     private $count = '0';
 
+    /**
+     * @return int
+     */
+    public function getTermTaxonomyId()
+    {
+        return $this->termTaxonomyId;
+    }
 
+    /**
+     * @param int $termTaxonomyId
+     */
+    public function setTermTaxonomyId($termTaxonomyId)
+    {
+        $this->termTaxonomyId = $termTaxonomyId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTermId()
+    {
+        return $this->termId;
+    }
+
+    /**
+     * @param int $termId
+     */
+    public function setTermId($termId)
+    {
+        $this->termId = $termId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxonomy()
+    {
+        return $this->taxonomy;
+    }
+
+    /**
+     * @param string $taxonomy
+     */
+    public function setTaxonomy($taxonomy)
+    {
+        $this->taxonomy = $taxonomy;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return int
+     */
+    public function getParent()
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param int $parent
+     */
+    public function setParent($parent)
+    {
+        $this->parent = $parent;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCount()
+    {
+        return $this->count;
+    }
+
+    /**
+     * @param int $count
+     */
+    public function setCount($count)
+    {
+        $this->count = $count;
+    }
 }
 

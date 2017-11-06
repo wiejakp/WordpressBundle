@@ -42,6 +42,68 @@ class Option
      */
     private $autoload = 'yes';
 
+    /**
+     * @return int
+     */
+    public function getOptionId()
+    {
+        return $this->optionId;
+    }
 
+    /**
+     * @param int $optionId
+     */
+    public function setOptionId($optionId)
+    {
+        $this->optionId = $optionId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOptionName()
+    {
+        return $this->optionName;
+    }
+
+    /**
+     * @param string $optionName
+     */
+    public function setOptionName($optionName)
+    {
+        $this->optionName = $optionName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOptionValue()
+    {
+        return $this->optionValue;
+    }
+
+    /**
+     * @param string $optionValue
+     */
+    public function setOptionValue($optionValue)
+    {
+        $this->optionValue = $optionValue;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAutoload()
+    {
+        return $this->autoload;
+    }
+
+    /**
+     * @param string $autoload
+     */
+    public function setAutoload($autoload)
+    {
+        $this->autoload = $autoload;
+    }
 }
 

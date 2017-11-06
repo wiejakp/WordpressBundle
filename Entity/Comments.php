@@ -119,6 +119,244 @@ class Comments
      */
     private $userId = '0';
 
+    /**
+     * @return int
+     */
+    public function getCommentId()
+    {
+        return $this->commentId;
+    }
 
+    /**
+     * @param int $commentId
+     */
+    public function setCommentId($commentId)
+    {
+        $this->commentId = $commentId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCommentPostId()
+    {
+        return $this->commentPostId;
+    }
+
+    /**
+     * @param int $commentPostId
+     */
+    public function setCommentPostId($commentPostId)
+    {
+        $this->commentPostId = $commentPostId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentAuthor()
+    {
+        return $this->commentAuthor;
+    }
+
+    /**
+     * @param string $commentAuthor
+     */
+    public function setCommentAuthor($commentAuthor)
+    {
+        $this->commentAuthor = $commentAuthor;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentAuthorEmail()
+    {
+        return $this->commentAuthorEmail;
+    }
+
+    /**
+     * @param string $commentAuthorEmail
+     */
+    public function setCommentAuthorEmail($commentAuthorEmail)
+    {
+        $this->commentAuthorEmail = $commentAuthorEmail;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentAuthorUrl()
+    {
+        return $this->commentAuthorUrl;
+    }
+
+    /**
+     * @param string $commentAuthorUrl
+     */
+    public function setCommentAuthorUrl($commentAuthorUrl)
+    {
+        $this->commentAuthorUrl = $commentAuthorUrl;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentAuthorIp()
+    {
+        return $this->commentAuthorIp;
+    }
+
+    /**
+     * @param string $commentAuthorIp
+     */
+    public function setCommentAuthorIp($commentAuthorIp)
+    {
+        $this->commentAuthorIp = $commentAuthorIp;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCommentDate()
+    {
+        return $this->commentDate;
+    }
+
+    /**
+     * @param \DateTime $commentDate
+     */
+    public function setCommentDate($commentDate)
+    {
+        $this->commentDate = $commentDate;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCommentDateGmt()
+    {
+        return $this->commentDateGmt;
+    }
+
+    /**
+     * @param \DateTime $commentDateGmt
+     */
+    public function setCommentDateGmt($commentDateGmt)
+    {
+        $this->commentDateGmt = $commentDateGmt;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentContent()
+    {
+        return $this->commentContent;
+    }
+
+    /**
+     * @param string $commentContent
+     */
+    public function setCommentContent($commentContent)
+    {
+        $this->commentContent = $commentContent;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCommentKarma()
+    {
+        return $this->commentKarma;
+    }
+
+    /**
+     * @param int $commentKarma
+     */
+    public function setCommentKarma($commentKarma)
+    {
+        $this->commentKarma = $commentKarma;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentApproved()
+    {
+        return $this->commentApproved;
+    }
+
+    /**
+     * @param string $commentApproved
+     */
+    public function setCommentApproved($commentApproved)
+    {
+        $this->commentApproved = $commentApproved;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentAgent()
+    {
+        return $this->commentAgent;
+    }
+
+    /**
+     * @param string $commentAgent
+     */
+    public function setCommentAgent($commentAgent)
+    {
+        $this->commentAgent = $commentAgent;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCommentType()
+    {
+        return $this->commentType;
+    }
+
+    /**
+     * @param string $commentType
+     */
+    public function setCommentType($commentType)
+    {
+        $this->commentType = $commentType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCommentParent()
+    {
+        return $this->commentParent;
+    }
+
+    /**
+     * @param int $commentParent
+     */
+    public function setCommentParent($commentParent)
+    {
+        $this->commentParent = $commentParent;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    /**
+     * @param int $userId
+     */
+    public function setUserId($userId)
+    {
+        $this->userId = $userId;
+    }
 }
 

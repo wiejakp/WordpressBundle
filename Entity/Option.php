@@ -1,24 +1,109 @@
 <?php
-/*
- * This file is part of the Ekino Wordpress package.
- *
- * (c) 2013 Ekino
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ekino\WordpressBundle\Entity;
 
-use Ekino\WordpressBundle\Model\Option as OptionModel;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class Option.
+ * Options
  *
- * This is the Option entity
- *
- * @author Vincent Composieux <composieux@ekino.com>
+ * @ORM\Table(name="wp_options", uniqueConstraints={@ORM\UniqueConstraint(name="option_name", columns={"option_name"})})
+ * @ORM\Entity
  */
-class Option extends OptionModel
+class Option
 {
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="option_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $optionId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="option_name", type="string", length=191, nullable=false)
+     */
+    private $optionName = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="option_value", type="text", nullable=false)
+     */
+    private $optionValue;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="autoload", type="string", length=20, nullable=false)
+     */
+    private $autoload = 'yes';
+
+    /**
+     * @return int
+     */
+    public function getOptionId()
+    {
+        return $this->optionId;
+    }
+
+    /**
+     * @param int $optionId
+     */
+    public function setOptionId($optionId)
+    {
+        $this->optionId = $optionId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOptionName()
+    {
+        return $this->optionName;
+    }
+
+    /**
+     * @param string $optionName
+     */
+    public function setOptionName($optionName)
+    {
+        $this->optionName = $optionName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOptionValue()
+    {
+        return $this->optionValue;
+    }
+
+    /**
+     * @param string $optionValue
+     */
+    public function setOptionValue($optionValue)
+    {
+        $this->optionValue = $optionValue;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAutoload()
+    {
+        return $this->autoload;
+    }
+
+    /**
+     * @param string $autoload
+     */
+    public function setAutoload($autoload)
+    {
+        $this->autoload = $autoload;
+    }
 }
+

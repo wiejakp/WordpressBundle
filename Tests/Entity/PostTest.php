@@ -12,7 +12,7 @@ namespace Ekino\WordpressBundle\Tests\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Ekino\WordpressBundle\Entity\Post;
-use Ekino\WordpressBundle\Entity\PostMeta;
+use Ekino\WordpressBundle\Entity\Postmeta;
 use Ekino\WordpressBundle\Entity\User;
 
 /**

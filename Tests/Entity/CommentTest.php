@@ -10,7 +10,7 @@
 
 namespace Ekino\WordpressBundle\Tests\Entity;
 
-use Ekino\WordpressBundle\Entity\Comment;
+use Ekino\WordpressBundle\Entity\Comments;
 use Ekino\WordpressBundle\Entity\Post;
 use Ekino\WordpressBundle\Entity\User;
 
@@ -28,7 +28,7 @@ class CommentTest extends \PHPUnit_Framework_TestCase
      */
     public function testGettersSetters()
     {
-        $entity = new Comment();
+        $entity = new Comments();
 
         $entity->setAgent('agent');
         $entity->setApproved('approved');
@@ -44,7 +44,7 @@ class CommentTest extends \PHPUnit_Framework_TestCase
 
         $entity->setKarma(2);
 
-        $parent = new Comment();
+        $parent = new Comments();
         $parent->setContent('parent content');
         $entity->setParent($parent);
 

@@ -26,7 +26,7 @@ class OptionManager extends BaseManager
      */
     public function findOneByOptionName($optionName)
     {
-        return $this->findOneBy(['name' => $optionName]);
+        return $this->findOneBy(['optionName' => $optionName]);
     }
 
     /**

@@ -85,7 +85,7 @@ class PostExtension extends \Twig_Extension
             throw new \UnexpectedValueException(sprintf('No post with ID "%d"', $postId));
         }
 
-        $permalinkStructure = $this->optionExtension->getOption('permalink_structure', '')->getValue();
+        $permalinkStructure = $this->optionExtension->getOption('permalink_structure', '')->getOptionValue();
 
         $relativeUrl = $this->replacePostArguments($permalinkStructure, $post);
 
@@ -106,13 +106,13 @@ class PostExtension extends \Twig_Extension
      */
     public function replacePostArguments($permalinkStructure, Post $post)
     {
-        $postDate = $post->getDate();
+        $postDate = $post->getPostDate();
 
         $permalinkStructure = str_replace('%year%', $postDate->format('Y'), $permalinkStructure);
         $permalinkStructure = str_replace('%monthnum%', $postDate->format('m'), $permalinkStructure);
         $permalinkStructure = str_replace('%day%', $postDate->format('d'), $permalinkStructure);
         $permalinkStructure = str_replace('%post_id%', $post->getId(), $permalinkStructure);
-        $permalinkStructure = str_replace('%postname%', $post->getName(), $permalinkStructure);
+        $permalinkStructure = str_replace('%postname%', $post->getPostName(), $permalinkStructure);
 
         return $permalinkStructure;
     }

@@ -26,5 +26,17 @@
         <service id="ekino.wordpress.security.entry_point" class="Ekino\WordpressBundle\Security\WordpressEntryPoint" public="true">
             <argument>%ekino.wordpress.login_url%</argument>
         </service>
+
+        <!-- Listeners -->
+
+        <service id="ekino.wordpress.listener.wordpress_request" class="Ekino\WordpressBundle\Listener\WordpressRequestListener" public="true">
+            <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" />
+
+            <argument type="service" id="ekino.wordpress.wordpress" />
+            <argument type="service" id="security.token_storage" />
+            <argument type="service" id="ekino.wordpress.manager.user" />
+            <argument type="service" id="event_dispatcher" />
+        </service>
+
     </services>
 </container>

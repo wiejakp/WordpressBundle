@@ -1,24 +1,42 @@
 <?php
-/*
- * This file is part of the Ekino Wordpress package.
- *
- * (c) 2013 Ekino
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ekino\WordpressBundle\Entity;
 
-use Ekino\WordpressBundle\Model\TermRelationships as TermRelationshipsModel;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class TermRelationships.
+ * TermRelationships
  *
- * This is the TermRelationships entity
- *
- * @author Vincent Composieux <composieux@ekino.com>
+ * @ORM\Table(name="term_relationships", indexes={@ORM\Index(name="term_taxonomy_id", columns={"term_taxonomy_id"})})
+ * @ORM\Entity
  */
-class TermRelationships extends TermRelationshipsModel
+class TermRelationships
 {
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="object_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $objectId = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="term_taxonomy_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $termTaxonomyId = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="term_order", type="integer", nullable=false)
+     */
+    private $termOrder = '0';
+
+
 }
+

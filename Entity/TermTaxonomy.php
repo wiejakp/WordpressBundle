@@ -1,24 +1,61 @@
 <?php
-/*
- * This file is part of the Ekino Wordpress package.
- *
- * (c) 2013 Ekino
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ekino\WordpressBundle\Entity;
 
-use Ekino\WordpressBundle\Model\TermTaxonomy as TermTaxonomyModel;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class TermTaxonomy.
+ * TermTaxonomy
  *
- * This is the TermTaxonomy entity
- *
- * @author Vincent Composieux <composieux@ekino.com>
+ * @ORM\Table(name="term_taxonomy", uniqueConstraints={@ORM\UniqueConstraint(name="term_id_taxonomy", columns={"term_id", "taxonomy"})}, indexes={@ORM\Index(name="taxonomy", columns={"taxonomy"})})
+ * @ORM\Entity
  */
-class TermTaxonomy extends TermTaxonomyModel
+class TermTaxonomy
 {
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="term_taxonomy_id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $termTaxonomyId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="term_id", type="bigint", nullable=false)
+     */
+    private $termId = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="taxonomy", type="string", length=32, nullable=false)
+     */
+    private $taxonomy = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text", nullable=false)
+     */
+    private $description;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="parent", type="bigint", nullable=false)
+     */
+    private $parent = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="count", type="bigint", nullable=false)
+     */
+    private $count = '0';
+
+
 }
+

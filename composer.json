@@ -1,8 +1,8 @@
 {
-    "name": "ekino/wordpress-bundle",
+    "name": "wiejakp/wordpress-bundle",
     "type": "symfony-bundle",
-    "description": "A Symfony bundle to link Symfony with Wordpress",
-    "keywords": ["ekino", "bundle", "symfony", "wordpress"],
+    "description": "Forked Fromhttp://github.com/ekino/EkinoWordpressBundle",
+    "keywords": ["wiejakp", "ekino", "bundle", "symfony", "wordpress"],
     "homepage": "http://github.com/ekino/EkinoWordpressBundle",
     "license": "MIT",
     "authors": [

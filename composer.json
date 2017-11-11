@@ -20,7 +20,7 @@
         "symfony/symfony": "3.3.*"
     },
     "autoload": {
-        "psr-4": { "wiejakp\\WordPressBundle\\": "" }
+        "psr-4": { "Ekino\\WordpressBundle\\": "" }
     },
     "extra": {
         "branch-alias": {

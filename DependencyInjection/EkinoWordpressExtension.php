@@ -82,10 +82,6 @@ class EkinoWordpressExtension extends Extension
             $loader->load('i18n.xml');
         }
 
-        if ($config['enable_wordpress_listener']) {
-            $loader->load('listener.xml');
-        }
-
         $container->setParameter('ekino.wordpress.cookie_hash', $config['cookie_hash']);
         $container->setParameter('ekino.wordpress.firewall_name', $config['security']['firewall_name']);
         $container->setParameter('ekino.wordpress.login_url', $config['security']['login_url']);

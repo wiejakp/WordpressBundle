@@ -1,30 +1,26 @@
 {
     "name": "wiejakp/wordpress-bundle",
     "type": "symfony-bundle",
-    "description": "Forked Fromhttp://github.com/ekino/EkinoWordpressBundle",
-    "keywords": ["wiejakp", "ekino", "bundle", "symfony", "wordpress"],
-    "homepage": "http://github.com/ekino/EkinoWordpressBundle",
+    "description": "Forked From: http://github.com/ekino/EkinoWordpressBundle",
+    "keywords": ["wiejakp", "bundle", "symfony", "wordpress"],
+    "homepage": "https://github.com/wiejakp/WordPressBundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vincent Composieux",
-            "email": "composieux@ekino.com"
+            "name": "Przemek Wiejak",
+            "email": "przemek@wiejak.us"
         }
     ],
     "require": {
-        "php": "^5.4|^7.0",
-        "symfony/framework-bundle": "^2.6|^3.0",
-        "symfony/security-bundle": "^2.6|^3.0",
-        "symfony/monolog-bundle": "^2.2|^3.0",
-        "doctrine/doctrine-bundle": "^1.0",
-        "doctrine/orm": "^2.2",
-        "hautelook/phpass": "0.3"
-    },
-    "suggest": {
-        "twig/twig": ""
+        "php": ">=5.5.9",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/orm": "^2.5",
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "symfony/monolog-bundle": "^3.1.0",
+        "symfony/symfony": "3.3.*"
     },
     "autoload": {
-        "psr-4": { "Ekino\\WordpressBundle\\": "" }
+        "psr-4": { "wiejakp\\WordPressBundle\\": "" }
     },
     "extra": {
         "branch-alias": {

@@ -95,9 +95,11 @@ class WordpressRequestListener
      */
     protected function checkAuthentication(Request $request)
     {
+        /*
         if (!$request->hasPreviousSession()) {
             return;
         }
+        */
 
         $wp_user = wp_get_current_user();
 
